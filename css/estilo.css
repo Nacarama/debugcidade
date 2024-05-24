@@ -1,11 +1,11 @@
 .root{
 
   --bg-color: #0C0C23;
-  /*--bg-color1: linear-gradient(70deg, blue,#0C0C23);*/
+  --bg-color1: linear-gradient(70deg, blue,#0C0C23); 
+  --bg-color2: aquamarine;
   --bg-color3:#FC6600;
   --bg-color4:red;
   --bg-color5:#fff;
-  --bg-color2: aquamarine;
   --font-color:#00ffff;
   --font-hover:#fff;
   --accent-color: bisque;
@@ -17,10 +17,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} /*ERRO(chave não tava fechada)*/
 
-
-body {
-  background: var(--bg-color);
+body{
+  background-color: var(--bg-color);
 }
 
 .header {
@@ -30,24 +30,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:transparent;
+  background-color: transparent;
   position: fixed;
 }
+
 #logo {
   margin-left: 20px;
   margin-top: 10px;
   width: 100px;
   height: 100px;
 }
-#monu {
+#menu { /*ERRO(monu)*/
   display: flex;
   list-style: none;
   gap:0.5rem;
 }
-#monu a {
+#menu a { /*ERRO(monu)*/
   display:block;
 }
-#monu a {
+
+#menu a { /*ERRO(monu)*/
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px;
@@ -62,7 +64,6 @@ body {
 #btnMobile {
   display: none;
 }
-
 
 section {
   width: 100%;
@@ -91,7 +92,7 @@ section {
   mix-blend-mode:luminosity;
 }
 
-#img::hover{
+#img:hover{ /*ERRO(::)*/
   animation: efeito 0.5s ease-in-out infinite;
 }
 
@@ -142,8 +143,6 @@ p{
   margin-top: 50px;
 }
 
-
-
 h1{
   color:var(--font-color);
   display:flex;
@@ -163,13 +162,13 @@ h1{
   font-size: 20px;
 }
 
-.footter {
+.footer { /*ERRO(footter)*/
   width: 100%;
   height: 80px;
   background:var(--font-color);
   color: var(--accent-hover);
 }
-.footter h5 {
+.footer h5 {
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -201,7 +200,7 @@ h1{
   left: -50%;
   width: 100%;
   height: 100%;
-  /*background: linear-gradient(-45deg, var(--accent-color), #520852);*/
+  background: linear-gradient(-45deg, var(--accent-color), #520852); /*ERRO(linha comentada)*/
   background: var(--bg-color);
   z-index: 6;
   transform: translateX(100%);
@@ -355,7 +354,7 @@ h1{
 @media (max-width: 600px) {
 
   body {
-    /*background-image: linear-gradient(to right, #dc143c, bisque);*/
+    background-image: linear-gradient(to right, #dc143c, bisque); /*ERRO(linha comentada)*/
     background: var(--bg-color3);
   }
   #btnMobile{
@@ -475,4 +474,4 @@ h1{
     top: -7px;
   }
 }
-}
+/*ERRO(})*/
